@@ -31,6 +31,12 @@ if (package_check == FALSE) {
         install.packages('tidyr')
 }
 
+package_check <- require("RColorBrewer")
+if (package_check == FALSE) {
+        install.packages('RColorBrewer')
+}
+
+library(RColorBrewer)
 library(ggplot2)
 library(shiny)
 library(leaflet)
